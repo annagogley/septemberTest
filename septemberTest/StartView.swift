@@ -8,6 +8,27 @@
 import SwiftUI
 
 struct StartView: View {
+    @State var tappedButton : Bool = false
+    var body: some View {
+        isButtonTapped() ? AnyView(WebView(url: URL(string: "https://google.com")!).ignoresSafeArea()) : AnyView(MenuView())
+    }
+    
+    func isButtonTapped() -> Bool {
+        if UserDefaults.standard.bool(forKey: "tappedButton") == true {
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
+struct StartView_Previews: PreviewProvider {
+    static var previews: some View {
+        StartView()
+    }
+}
+
+struct MenuView: View {
     var body: some View {
         TabView {
             NotesPage()
@@ -23,11 +44,5 @@ struct StartView: View {
                     Label("WebView", systemImage: "network")
                 }
         }
-    }
-}
-
-struct StartView_Previews: PreviewProvider {
-    static var previews: some View {
-        StartView()
     }
 }

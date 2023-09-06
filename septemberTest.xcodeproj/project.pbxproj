@@ -17,6 +17,9 @@
 		3755C5CB2AA876880070DA93 /* NotesData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3755C5C92AA876880070DA93 /* NotesData.xcdatamodeld */; };
 		3755C5CD2AA877210070DA93 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3755C5CC2AA877210070DA93 /* CoreDataStack.swift */; };
 		3755C5CF2AA8969C0070DA93 /* GoogleWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3755C5CE2AA8969C0070DA93 /* GoogleWebView.swift */; };
+		37C3AC4D2AA8B597001F77F1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3AC4C2AA8B597001F77F1 /* Extensions.swift */; };
+		37C3AC4F2AA8C5A2001F77F1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3AC4E2AA8C5A2001F77F1 /* NetworkManager.swift */; };
+		37C3AC512AA8F946001F77F1 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3AC502AA8F946001F77F1 /* ConnectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		3755C5CA2AA876880070DA93 /* NotesData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesData.xcdatamodel; sourceTree = "<group>"; };
 		3755C5CC2AA877210070DA93 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = ../../../../../CoreDataStack.swift; sourceTree = "<group>"; };
 		3755C5CE2AA8969C0070DA93 /* GoogleWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoogleWebView.swift; path = ../../../../../GoogleWebView.swift; sourceTree = "<group>"; };
+		37C3AC4C2AA8B597001F77F1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../../../../Extensions.swift; sourceTree = "<group>"; };
+		37C3AC4E2AA8C5A2001F77F1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = ../../../../../NetworkManager.swift; sourceTree = "<group>"; };
+		37C3AC502AA8F946001F77F1 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConnectionManager.swift; path = ../../../../../ConnectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +75,10 @@
 				3755C5B52AA868350070DA93 /* septemberTestApp.swift */,
 				3755C5B72AA868350070DA93 /* StartView.swift */,
 				3755C5C32AA868690070DA93 /* NotesPage.swift */,
+				37C3AC4C2AA8B597001F77F1 /* Extensions.swift */,
 				3755C5C52AA869930070DA93 /* APIPage.swift */,
+				37C3AC4E2AA8C5A2001F77F1 /* NetworkManager.swift */,
+				37C3AC502AA8F946001F77F1 /* ConnectionManager.swift */,
 				3755C5C72AA869A60070DA93 /* ThirdPage.swift */,
 				3755C5B92AA868370070DA93 /* Assets.xcassets */,
 				3755C5BB2AA868370070DA93 /* Preview Content */,
@@ -156,12 +165,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3755C5CD2AA877210070DA93 /* CoreDataStack.swift in Sources */,
+				37C3AC4D2AA8B597001F77F1 /* Extensions.swift in Sources */,
 				3755C5C42AA868690070DA93 /* NotesPage.swift in Sources */,
+				37C3AC4F2AA8C5A2001F77F1 /* NetworkManager.swift in Sources */,
 				3755C5C82AA869A60070DA93 /* ThirdPage.swift in Sources */,
 				3755C5B82AA868350070DA93 /* StartView.swift in Sources */,
 				3755C5CF2AA8969C0070DA93 /* GoogleWebView.swift in Sources */,
 				3755C5CB2AA876880070DA93 /* NotesData.xcdatamodeld in Sources */,
 				3755C5B62AA868350070DA93 /* septemberTestApp.swift in Sources */,
+				37C3AC512AA8F946001F77F1 /* ConnectionManager.swift in Sources */,
 				3755C5C62AA869930070DA93 /* APIPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

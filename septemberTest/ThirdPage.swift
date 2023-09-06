@@ -8,10 +8,25 @@
 import SwiftUI
 
 struct ThirdPage: View {
+    
+    var body: some View {
+        ButtonView()
+    }
+}
+
+struct ThirdPage_Previews: PreviewProvider {
+    static var previews: some View {
+        ThirdPage()
+    }
+}
+
+struct ButtonView: View {
     @State private var isPresentWebView = false
+    let defaults = UserDefaults.standard
     var body: some View {
         Button {
             isPresentWebView = true
+            defaults.set(true, forKey: "tappedButton")
         } label: {
             ZStack {
                 Capsule(style: .circular)
@@ -23,14 +38,8 @@ struct ThirdPage: View {
             }
         }
         .fullScreenCover(isPresented: $isPresentWebView) {
-                        WebView(url: URL(string: "https://google.com")!)
-//                            .ignoresSafeArea()
-                }
-    }
-}
-
-struct ThirdPage_Previews: PreviewProvider {
-    static var previews: some View {
-        ThirdPage()
+            WebView(url: URL(string: "https://google.com")!)
+                .ignoresSafeArea()
+        }
     }
 }

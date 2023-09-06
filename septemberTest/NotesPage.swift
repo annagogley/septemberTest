@@ -10,8 +10,11 @@ import SwiftUI
 struct NotesPage: View {
     
     @State var note = ""
-    var notesData = CoreDataStack.shared.getAllMoods()
-
+    @FetchRequest(
+            entity: Notes.entity(),
+            sortDescriptors: [NSSortDescriptor(keyPath: \Notes.id, ascending: false)]
+        ) var notesData: FetchedResults<Notes>
+    
     var body: some View {
         VStack {
             HStack(spacing: 8) {
@@ -29,10 +32,14 @@ struct NotesPage: View {
                 Button {
                     let newNote = Notes(context: CoreDataStack.shared.managedContext)
                     newNote.note = note
+                    if let lastData = notesData.first?.id {
+                        newNote.id = lastData + 1
+                    } else {
+                        newNote.id = 0
+                    }
                     CoreDataStack.shared.saveContext()
                     note = ""
                     hideKeyboard()
-//                   CoreDataStack.shared.deleteAllData()
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
@@ -45,21 +52,23 @@ struct NotesPage: View {
                 .disabled(note.isEmpty)
             }
             .padding()
-            ScrollView {
+            ScrollView() {
                 if CoreDataStack.shared.isEmpty{
                     Text("No notes yet")
                         .font(.title2)
                         .foregroundColor(.gray)
-                    Spacer()
                 } else {
                     ForEach(notesData, id: \.self) {
                         element in
                         if let noteData = element.note {
-                            Text(noteData)
+                                Text(noteData)
+                                    .padding(.bottom)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
                         }
                     }
                 }
             }
+            .padding(.horizontal)
         }
         .ignoresSafeArea(.keyboard)
         .onTapGesture {
@@ -74,9 +83,4 @@ struct NotesPage_Previews: PreviewProvider {
     }
 }
 
-extension View {
-    func hideKeyboard() {
-        let resign = #selector(UIResponder.resignFirstResponder)
-        UIApplication.shared.sendAction(resign, to: nil, from: nil, for: nil)
-    }
-}
+
