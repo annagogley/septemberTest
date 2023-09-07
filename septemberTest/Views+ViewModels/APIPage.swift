@@ -37,9 +37,9 @@ extension APIPage {
        
         @Published var fact : String = "Loading..."
         @ObservedObject var connectionManager = ConnectionManager()
-        let networkManager : NetworkManagerProtocol
+        let networkManager : NetworkServiceProtocol
 
-        init(networkManager: NetworkManagerProtocol = NetworkManager()) {
+        init(networkManager: NetworkServiceProtocol = NetworkService()) {
             self.networkManager = networkManager
         }
 

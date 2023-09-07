@@ -8,22 +8,13 @@
 import Foundation
 import Combine
 
-enum TestError: Error {
-    case generalError
-    case networkError
-}
-
-struct FactModel: Codable {
-    let fact : String
-}
-
-protocol NetworkManagerProtocol {
+protocol NetworkServiceProtocol {
     func fetchFact(completion: @escaping (String) -> Void)
     func parseJSON(_ factData: Data) -> String?
     func didFailWithError(error: TestError)
 }
 
-class NetworkManager: NetworkManagerProtocol {
+class NetworkService: NetworkServiceProtocol {
     
     let ninjaURL = "https://api.api-ninjas.com/v1/facts?limit=1"
     
