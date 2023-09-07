@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3737B73D2AAA2363000A79C2 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = ../../../../../MenuView.swift; sourceTree = "<group>"; };
+		3737B73D2AAA2363000A79C2 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = septemberTest/MenuView.swift; sourceTree = SOURCE_ROOT; };
 		3755C5B22AA868350070DA93 /* septemberTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = septemberTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3755C5B52AA868350070DA93 /* septemberTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = septemberTestApp.swift; sourceTree = "<group>"; };
 		3755C5B72AA868350070DA93 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -34,11 +34,11 @@
 		3755C5C52AA869930070DA93 /* APIPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPage.swift; sourceTree = "<group>"; };
 		3755C5C72AA869A60070DA93 /* ThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPage.swift; sourceTree = "<group>"; };
 		3755C5CA2AA876880070DA93 /* NotesData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesData.xcdatamodel; sourceTree = "<group>"; };
-		3755C5CC2AA877210070DA93 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = ../../../../../CoreDataStack.swift; sourceTree = "<group>"; };
-		3755C5CE2AA8969C0070DA93 /* GoogleWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoogleWebView.swift; path = ../../../../../GoogleWebView.swift; sourceTree = "<group>"; };
-		37C3AC4C2AA8B597001F77F1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../../../../Extensions.swift; sourceTree = "<group>"; };
-		37C3AC4E2AA8C5A2001F77F1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = ../../../../../NetworkManager.swift; sourceTree = "<group>"; };
-		37C3AC502AA8F946001F77F1 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConnectionManager.swift; path = ../../../../../ConnectionManager.swift; sourceTree = "<group>"; };
+		3755C5CC2AA877210070DA93 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = septemberTest/CoreDataStack.swift; sourceTree = SOURCE_ROOT; };
+		3755C5CE2AA8969C0070DA93 /* GoogleWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoogleWebView.swift; path = septemberTest/GoogleWebView.swift; sourceTree = SOURCE_ROOT; };
+		37C3AC4C2AA8B597001F77F1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = septemberTest/Extensions.swift; sourceTree = SOURCE_ROOT; };
+		37C3AC4E2AA8C5A2001F77F1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = septemberTest/NetworkManager.swift; sourceTree = SOURCE_ROOT; };
+		37C3AC502AA8F946001F77F1 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConnectionManager.swift; path = septemberTest/ConnectionManager.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
