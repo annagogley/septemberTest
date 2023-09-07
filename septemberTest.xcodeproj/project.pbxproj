@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3737B73E2AAA2363000A79C2 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3737B73D2AAA2363000A79C2 /* MenuView.swift */; };
 		3755C5B62AA868350070DA93 /* septemberTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3755C5B52AA868350070DA93 /* septemberTestApp.swift */; };
 		3755C5B82AA868350070DA93 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3755C5B72AA868350070DA93 /* StartView.swift */; };
 		3755C5BA2AA868370070DA93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3755C5B92AA868370070DA93 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3737B73D2AAA2363000A79C2 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = ../../../../../MenuView.swift; sourceTree = "<group>"; };
 		3755C5B22AA868350070DA93 /* septemberTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = septemberTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3755C5B52AA868350070DA93 /* septemberTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = septemberTestApp.swift; sourceTree = "<group>"; };
 		3755C5B72AA868350070DA93 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				3755C5CE2AA8969C0070DA93 /* GoogleWebView.swift */,
 				3755C5B52AA868350070DA93 /* septemberTestApp.swift */,
 				3755C5B72AA868350070DA93 /* StartView.swift */,
+				3737B73D2AAA2363000A79C2 /* MenuView.swift */,
 				3755C5C32AA868690070DA93 /* NotesPage.swift */,
 				37C3AC4C2AA8B597001F77F1 /* Extensions.swift */,
 				3755C5C52AA869930070DA93 /* APIPage.swift */,
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3755C5CD2AA877210070DA93 /* CoreDataStack.swift in Sources */,
+				3737B73E2AAA2363000A79C2 /* MenuView.swift in Sources */,
 				37C3AC4D2AA8B597001F77F1 /* Extensions.swift in Sources */,
 				3755C5C42AA868690070DA93 /* NotesPage.swift in Sources */,
 				37C3AC4F2AA8C5A2001F77F1 /* NetworkManager.swift in Sources */,
@@ -306,6 +310,7 @@
 				DEVELOPMENT_TEAM = 38BPR85JLN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TestApp;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -336,6 +341,7 @@
 				DEVELOPMENT_TEAM = 38BPR85JLN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TestApp;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

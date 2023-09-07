@@ -27,22 +27,3 @@ struct StartView_Previews: PreviewProvider {
         StartView()
     }
 }
-
-struct MenuView: View {
-    var body: some View {
-        TabView {
-            NotesPage()
-                .tabItem {
-                    Label("Notes", systemImage: "note.text")
-                }
-            APIPage()
-                .tabItem {
-                    Label("Facts", systemImage: "lightbulb")
-                }
-            ThirdPage()
-                .tabItem {
-                    Label("WebView", systemImage: "network")
-                }
-        }
-    }
-}

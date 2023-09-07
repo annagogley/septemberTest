@@ -22,11 +22,17 @@ struct ThirdPage_Previews: PreviewProvider {
 
 struct ButtonView: View {
     @State private var isPresentWebView = false
+    @State private var showAlert = false
+    @ObservedObject var connectionManager = ConnectionManager()
     let defaults = UserDefaults.standard
     var body: some View {
         Button {
-            isPresentWebView = true
-            defaults.set(true, forKey: "tappedButton")
+            if connectionManager.isConnected {
+                isPresentWebView = true
+                defaults.set(true, forKey: "tappedButton")
+            } else {
+                showAlert.toggle()
+            }
         } label: {
             ZStack {
                 Capsule(style: .circular)
@@ -40,6 +46,9 @@ struct ButtonView: View {
         .fullScreenCover(isPresented: $isPresentWebView) {
             WebView(url: URL(string: "https://google.com")!)
                 .ignoresSafeArea()
+        }
+        .alert("Сonnection problem. Please check network connection.", isPresented: $showAlert) {
+            Button("OK", role: .cancel) { }
         }
     }
 }
